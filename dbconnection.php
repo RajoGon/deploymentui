@@ -9,4 +9,10 @@
 	     echo "Connection could not be established.<br />";
 	     die( print_r( sqlsrv_errors(), true));
 	}
+
+	if($conn){
+		echo "Connection esytablished";
+	}else{
+		echo  "Connection failed to server due to connetion issues or invalid details"
+	}
 ?>
