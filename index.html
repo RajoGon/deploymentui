@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DeploymentUI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <ul class="navbar-nav">
+		    <li  class="nav-item">
+		      <a id="username" class="nav-link" href="#">Hello User-Name</a>
+		    </li>
+		    <li class="nav-item active">
+		      <a class="nav-link" href="./index.html">Cloud Deployment</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="./history.html">Deployment History</a>
+		    </li>
+
+		  </ul>
+		</nav>
+		<div class="container">
+			<!-- Jumbo Tron -->
+			<div class="jumbotron">
+			  <h1>Welcome to KPMG Lighthouse Cloud Deployment</h1> 
+			  <p>Here you can submit the deployment by filling in the form bellow</p> 
+			</div>			
+			<!-- FORM -->
+			<form class="deploymentform" action="/action_page.php">
+				<div class="row">
+					<div class = "col-sm-4">
+			  			<div class="form-group">
+						  <label for="sel1">Deployment Pattern</label>
+						  <select class="form-control" id="pattern">
+						    <option>Cognitive Pattern</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						  </select>
+						</div>
+					</div>
+					<div class = "col-sm-4">
+			  			<div class="form-group">
+						<label for="email">T-Shirt Size</label>
+						  <select class="form-control" id="tshirt">
+						    <option>Large</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						  </select>
+						</div>
+
+					</div>
+					<div class = "col-sm-4">
+			  			<div class="form-group">
+						<label for="email">Region</label>
+						  <select class="form-control" id="region">
+						    <option>India</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						  </select>
+						</div>
+
+					</div>
+				</div>
+				<div class="space"></div>
+				<div class="row">
+					<div class = "col-sm-4">
+			  			<div class="form-group">
+						<label for="email">Environment</label>
+						  <select class="form-control" id="environment">
+						    <option>Dev</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						  </select>
+						</div>
+
+					</div>
+					<div class = "col-sm-4">
+			  			<div class="form-group">
+						  <label for="email">Engagement Code</label>
+						  <input type="text" class="form-control" id="engcode" required>
+						</div>
+					</div>
+				</div>
+				<div class="space"></div>
+				<div class="checkbox">
+				  <label><input type="checkbox" value="" required> I agree to the Terms of Service</label>
+				</div>
+			  <button type="submit" class="btn btn-primary">Export</button>
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+
+    	</div>
+    </body>
+</html>
